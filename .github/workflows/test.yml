@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
+      - name: Get code #this download the repository
         uses: actions/checkout@v3 
-      - name: Install nodeJS
+      - name: Install nodeJS  #this install nodejs version 18 because the runner has old version
         uses: actions/setup-node@v3
         with: 
           node-version: 18
