@@ -11,7 +11,7 @@ jobs:
         with: 
           node-version: 18
       - name: Install dependencies
-        run: npm ci
+        run: npm ci  # or npm install , use infos from package-lock.json , help to use the same version during development
       - name: Run test
         run: npm test
         
